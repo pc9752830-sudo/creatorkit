@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Free YouTube creator tools to generate video titles, hashtags, video ideas, descriptions, and channel names with CreatorKit.">
+<meta name="theme-color" content="#f6f8fc">
+<title>CreatorKit — Free YouTube Creator Tools</title>
+<style>
+:root{--bg:#f6f8fc;--panel:#fff;--text:#18223a;--muted:#66728a;--line:#e3e8f2;--accent:#6958e8;--soft:#f0edff;--green:#168764}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+.nav{min-height:72px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:12px max(22px,calc((100vw - 1120px)/2));background:var(--panel);gap:16px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;font-size:20px;letter-spacing:-.5px}.logo{height:36px;width:36px;border-radius:12px;background:linear-gradient(135deg,#6858e8,#b15cff);display:grid;place-items:center;color:white;font-weight:900}.navlinks{display:flex;gap:22px;font-size:14px}.navlinks a,footer a{color:var(--muted);text-decoration:none}.navlinks a:hover,footer a:hover{color:var(--accent)}button{font:inherit}.pill{border:0;background:var(--accent);color:white;padding:11px 17px;border-radius:11px;font-weight:750;cursor:pointer}.pill:hover{filter:brightness(1.07)}.wrap{max-width:1120px;margin:auto;padding:0 22px}.hero{padding:64px 0 38px;text-align:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:var(--panel);border-radius:30px;padding:8px 13px;color:var(--muted);font-size:12px;font-weight:750}.dot{width:7px;height:7px;background:#20b486;border-radius:50%}h1{font-size:clamp(36px,6vw,60px);line-height:1.04;letter-spacing:-2.5px;margin:22px 0 16px}.gradient{background:linear-gradient(90deg,#6958e8,#b05af4);color:transparent;background-clip:text}.sub{max-width:650px;margin:0 auto;color:var(--muted);font-size:17px;line-height:1.7}.search{display:flex;gap:10px;max-width:590px;margin:28px auto 0;background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:8px;box-shadow:0 12px 36px #32226b12}.search input{flex:1;min-width:0;border:0;background:transparent;outline:none;padding:0 12px;font-size:14px}.stats{display:flex;justify-content:center;gap:30px;margin-top:24px;color:var(--muted);font-size:12px}.stats b{color:var(--text)}.sectionhead{display:flex;align-items:end;justify-content:space-between;margin:34px 0 18px}.sectionhead h2{font-size:23px;margin:0;letter-spacing:-.7px}.sectionhead p{margin:7px 0 0;color:var(--muted);font-size:13px}.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding-bottom:45px}.tool{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:21px;text-align:left;transition:.2s;cursor:pointer;color:var(--text);min-height:185px}.tool:hover{transform:translateY(-3px);border-color:#8d7ef0;box-shadow:0 14px 28px #32226b12}.ico{height:44px;width:44px;border-radius:13px;display:grid;place-items:center;font-size:22px;margin-bottom:17px;background:var(--soft)}.tool h3{font-size:16px;margin:0 0 8px}.tool p{font-size:13px;color:var(--muted);line-height:1.55;margin:0 0 15px}.tag{font-size:10px;font-weight:800;color:var(--green);background:#e8faf4;border-radius:6px;padding:5px 7px}.demo{margin-bottom:30px;background:var(--panel);border:1px solid var(--line);border-radius:22px;overflow:hidden}.demohead{padding:21px 24px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px}.demohead h2{margin:0;font-size:19px}.demohead span{font-size:12px;color:var(--muted)}.demobody{padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:22px}.fieldlabel{font-size:12px;font-weight:750;display:block;margin-bottom:9px}.textarea{width:100%;min-height:112px;resize:vertical;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:13px;color:var(--text);font:inherit;font-size:14px;outline-color:var(--accent)}.actions{display:flex;gap:9px;margin-top:12px;flex-wrap:wrap}.secondary{border:1px solid var(--line);background:var(--panel);color:var(--text);padding:10px 14px;border-radius:10px;cursor:pointer;font-weight:700}.output{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:16px;min-height:155px;color:var(--muted);font-size:14px;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere}.notice{font-size:11px;color:var(--muted);line-height:1.5;margin-top:10px}.hidden{display:none!important}.copyrow{display:flex;justify-content:space-between;align-items:center;gap:12px}.textcontent{padding:24px;line-height:1.8;color:var(--muted)}.textcontent h3{color:var(--text);font-size:16px;margin:18px 0 5px}.textcontent p{margin:8px 0}.foot{border-top:1px solid var(--line);padding:24px 0 34px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){.navlinks{display:none}.hero{padding-top:46px}.tools{grid-template-columns:1fr 1fr}.demobody{grid-template-columns:1fr}.stats{gap:12px;flex-wrap:wrap}.sectionhead{align-items:start;flex-direction:column;gap:8px}}@media(max-width:480px){.tools{grid-template-columns:1fr}.nav{padding:12px 18px}.hero{padding-top:36px}.sub{font-size:15px}.demohead{align-items:start;flex-direction:column}.foot{flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="brand"><div class="logo">C</div>CreatorKit<span style="color:var(--accent)">.</span></div>
+  <nav class="navlinks" aria-label="Main navigation"><a href="#tools">Free Tools</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+  <button class="pill" onclick="document.getElementById('try').scrollIntoView({behavior:'smooth'})">Try a tool ↗</button>
+</header>
+<main class="wrap">
+<section class="hero">
+  <div class="eyebrow"><span class="dot"></span> FREE TOOLS FOR EVERY CREATOR</div>
+  <h1>Create better content.<br><span class="gradient">Grow your audience.</span></h1>
+  <p class="sub">Simple creator tools for YouTube and social media. Generate video ideas, titles and hashtags in seconds — all in one place.</p>
+  <div class="search"><input id="search" placeholder="Search tools… e.g. YouTube title" aria-label="Search tools" oninput="filterTools()"><button class="pill" onclick="filterTools()">Find tools</button></div>
+  <div class="stats"><span>✦ <b>Free to try</b></span><span>⚡ <b>Quick results</b></span><span>◎ <b>Made for creators</b></span></div>
+</section>
+<section id="tools">
+  <div class="sectionhead"><div><h2>Explore creator tools</h2><p>Pick a tool and get started.</p></div><span style="font-size:12px;color:var(--muted)">6 free tools</span></div>
+  <div class="tools">
+    <button class="tool" data-key="youtube title generator" onclick="choose('title')"><div class="ico">✍️</div><h3>YouTube Title Generator</h3><p>Get catchy title ideas for your next video.</p><span class="tag">POPULAR</span></button>
+    <button class="tool" data-key="hashtag generator shorts instagram youtube" onclick="choose('hashtags')"><div class="ico">#️⃣</div><h3>Hashtag Generator</h3><p>Find relevant hashtags for Shorts and posts.</p><span class="tag">FREE TOOL</span></button>
+    <button class="tool" data-key="video idea generator content ideas" onclick="choose('ideas')"><div class="ico">💡</div><h3>Video Idea Generator</h3><p>Beat creator's block with fresh content ideas.</p><span class="tag">IDEAS</span></button>
+    <button class="tool" data-key="youtube description generator seo" onclick="choose('description')"><div class="ico">📝</div><h3>Description Writer</h3><p>Create a starting point for video descriptions.</p><span class="tag">FREE TOOL</span></button>
+    <button class="tool" data-key="thumbnail checklist design" onclick="choose('thumbnail')"><div class="ico">🖼️</div><h3>Thumbnail Checklist</h3><p>Use a quick checklist to improve thumbnail clarity.</p><span class="tag">QUICK GUIDE</span></button>
+    <button class="tool" data-key="channel name generator branding" onclick="choose('channel')"><div class="ico">🚀</div><h3>Channel Name Ideas</h3><p>Explore names for your next creator channel.</p><span class="tag">NEW</span></button>
+  </div>
+</section>
+<section class="demo" id="try">
+  <div class="demohead"><h2 id="tooltitle">✨ YouTube Title Generator</h2><span>Interactive demo · no sign-in</span></div>
+  <div class="demobody">
+    <div><label class="fieldlabel" for="topic">What is your video about?</label><textarea id="topic" class="textarea" placeholder="Example: Desi mummy catches a cartoon jinn…"></textarea>
+      <div class="actions"><button class="pill" onclick="generate()">Generate ideas ✨</button><button class="secondary" onclick="clearTool()">Clear</button></div>
+      <p class="notice">These starter tools run in your browser. They do not connect to an external AI service.</p>
+    </div>
+    <div><div class="copyrow"><label class="fieldlabel" for="result">Your result</label><button class="secondary" onclick="copyResult()">Copy result</button></div><div class="output" id="result" role="status" aria-live="polite">Your generated result will appear here.</div></div>
+  </div>
+</section>
+<section class="demo" id="about"><div class="demohead"><h2>About CreatorKit</h2><span>Built for creators</span></div><div class="textcontent"><p>CreatorKit is a collection of simple tools to help creators plan YouTube videos and social media content. Use the generators as a starting point, then edit the results to match your own voice and audience.</p><p>Our goal is to make content planning easier. Always review generated text for accuracy, originality, copyright, and platform rules before publishing.</p></div></section>
+<section class="demo" id="faq"><div class="demohead"><h2>Frequently asked questions</h2><span>Quick answers</span></div><div class="textcontent"><h3>Are these tools free?</h3><p>Yes, this basic version is free to use.</p><h3>Do these tools guarantee more views?</h3><p>No. They provide ideas, but views depend on content quality, audience interest, consistency, and many other factors.</p><h3>Do these tools use an AI API?</h3><p>No. This starter version creates template-based suggestions in your browser.</p><h3>Does CreatorKit have AdSense approval?</h3><p>No approval is claimed. Apply only after your live site has useful original content and meets Google's current requirements.</p></div></section>
+<section class="demo" id="contact"><div class="demohead"><h2>Contact</h2><span>Questions or feedback</span></div><div class="textcontent"><p>Before publishing, replace this section with a real contact email that you control. Do not publish placeholder or invented contact details.</p></div></section>
+<section class="demo" id="privacy"><div class="demohead"><h2>Privacy policy — setup required</h2><span>Before launch</span></div><div class="textcontent"><p>This is a starter notice, not a complete legal policy. Before launch, publish a privacy policy that accurately explains the data, cookies, analytics, forms, third-party services, and advertising technologies used on the live website. Update it if you add Google AdSense or other services.</p></div></section>
+<section class="demo" id="terms"><div class="demohead"><h2>Terms of use — setup required</h2><span>Before launch</span></div><div class="textcontent"><p>Use the tools responsibly and review generated content before publishing. Do not use the website to infringe copyright, mislead users, or violate platform rules. Replace this starter text with terms suited to the final website and your jurisdiction before launch.</p></div></section>
+<footer class="foot"><span>© 2026 CreatorKit</span><span><a href="#about">About</a> · <a href="#contact">Contact</a> · <a href="#privacy">Privacy</a> · <a href="#terms">Terms</a></span></footer>
+</main>
+<script>
+let current='title';
+const configs={title:'✨ YouTube Title Generator',hashtags:'#️⃣ Hashtag Generator',ideas:'💡 Video Idea Generator',description:'📝 Description Writer',thumbnail:'🖼️ Thumbnail Checklist',channel:'🚀 Channel Name Ideas'};
+function choose(type){current=type;document.getElementById('tooltitle').textContent=configs[type];document.getElementById('result').textContent='Add a topic and click Generate ideas.';document.getElementById('try').scrollIntoView({behavior:'smooth'});}
+function filterTools(){const q=document.getElementById('search').value.toLowerCase();document.querySelectorAll('.tool').forEach(el=>el.classList.toggle('hidden',!el.dataset.key.includes(q)));}
+function clearTool(){document.getElementById('topic').value='';document.getElementById('result').textContent='Your generated result will appear here.';}
+function generate(){
+ const t=document.getElementById('topic').value.trim();const result=document.getElementById('result');
+ if(!t){result.textContent='Please enter a video topic first.';return;}
+ let out='';
+ if(current==='title')out=`1. ${t} 😂 | You Won’t Expect This!\n2. जब ${t} ने मचाया धमाल 🤯\n3. The Funniest ${t} Moment Ever!\n4. ये क्या हो गया भाई? 😱\n5. ${t} का सबसे मजेदार ट्विस्ट`;
+ else if(current==='hashtags')out=`#${t.replace(/[^a-z0-9]/gi,'')} #YouTubeShorts #Shorts #FunnyVideos #Creator #Entertainment`;
+ else if(current==='ideas')out=`1. ${t} — unexpected twist ending\n2. ${t} vs. Desi family reactions\n3. What happens when ${t} goes wrong?\n4. A 3-part comedy mini-series about ${t}\n5. Let viewers choose the next twist`;
+ else if(current==='description')out=`Watch this video about ${t}! 🎬\n\nIf you enjoyed it, like, share and subscribe for more videos.\n\nRemember to customize this description and include only relevant hashtags.\n\n#YouTubeShorts #Creator`;
+ else if(current==='thumbnail')out=`THUMBNAIL CHECKLIST\n✓ One clear subject\n✓ Big, readable 2–4 word text\n✓ Strong contrast\n✓ Expressive face or clear action\n✓ Show the story without misleading viewers\n\nVideo topic: ${t}`;
+ else out=`Channel name ideas for ${t}:\n1. Creator Masti\n2. The Fun Factory\n3. Desi Twist Studio\n4. Viral Vibes Hub\n5. Daily Creator Lab\n\nCheck availability before choosing a name.`;
+ result.textContent=out;
+}
+function copyResult(){const s=document.getElementById('result').textContent;if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(s).then(()=>alert('Copied!')).catch(()=>alert('Please select the result text and copy it.'));}else{alert('Please select the result text and copy it.');}}
+</script>
+</body>
+</html>
